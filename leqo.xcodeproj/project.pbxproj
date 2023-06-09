@@ -8,23 +8,74 @@
 
 /* Begin PBXBuildFile section */
 		3929FA632A273CCF00FF27A5 /* leqoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3929FA622A273CCF00FF27A5 /* leqoApp.swift */; };
-		3929FA652A273CCF00FF27A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3929FA642A273CCF00FF27A5 /* ContentView.swift */; };
 		3929FA672A273CD000FF27A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3929FA662A273CD000FF27A5 /* Assets.xcassets */; };
 		3929FA6A2A273CD000FF27A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3929FA692A273CD000FF27A5 /* Preview Assets.xcassets */; };
 		3929FA712A27669F00FF27A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3929FA702A27669F00FF27A5 /* GoogleService-Info.plist */; };
+		3929FA742A27671D00FF27A5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3929FA732A27671D00FF27A5 /* FirebaseAuth */; };
+		3929FA762A27671D00FF27A5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3929FA752A27671D00FF27A5 /* FirebaseFirestore */; };
+		3929FA782A27671D00FF27A5 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3929FA772A27671D00FF27A5 /* FirebaseFirestoreSwift */; };
+		3929FA7A2A27671D00FF27A5 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3929FA792A27671D00FF27A5 /* FirebaseStorage */; };
+		3929FA7C2A27684400FF27A5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3929FA7B2A27684400FF27A5 /* MainView.swift */; };
+		3929FA852A2777F200FF27A5 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3929FA842A2777F200FF27A5 /* KeyboardViewController.swift */; };
+		3929FA892A2777F200FF27A5 /* HelloCustomKeyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3929FA822A2777F200FF27A5 /* HelloCustomKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3929FA8F2A27791100FF27A5 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3929FA8E2A27791100FF27A5 /* KeyboardView.swift */; };
+		3929FA902A27792A00FF27A5 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3929FA8E2A27791100FF27A5 /* KeyboardView.swift */; };
+		395979822A2AC9D90008A987 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395979812A2AC9D90008A987 /* SecondView.swift */; };
+		395979842A2ACB5C0008A987 /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395979832A2ACB5C0008A987 /* ThirdView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3929FA872A2777F200FF27A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3929FA572A273CCF00FF27A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3929FA812A2777F200FF27A5;
+			remoteInfo = HelloCustomKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3929FA8D2A2777F200FF27A5 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3929FA892A2777F200FF27A5 /* HelloCustomKeyboard.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3929FA5F2A273CCF00FF27A5 /* leqo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = leqo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3929FA622A273CCF00FF27A5 /* leqoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leqoApp.swift; sourceTree = "<group>"; };
-		3929FA642A273CCF00FF27A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3929FA662A273CD000FF27A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3929FA692A273CD000FF27A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3929FA702A27669F00FF27A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3929FA7B2A27684400FF27A5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		3929FA822A2777F200FF27A5 /* HelloCustomKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HelloCustomKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3929FA842A2777F200FF27A5 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		3929FA862A2777F200FF27A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3929FA8E2A27791100FF27A5 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		395979812A2AC9D90008A987 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		395979832A2ACB5C0008A987 /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3929FA5C2A273CCF00FF27A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3929FA742A27671D00FF27A5 /* FirebaseAuth in Frameworks */,
+				3929FA7A2A27671D00FF27A5 /* FirebaseStorage in Frameworks */,
+				3929FA762A27671D00FF27A5 /* FirebaseFirestore in Frameworks */,
+				3929FA782A27671D00FF27A5 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3929FA7F2A2777F200FF27A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				3929FA612A273CCF00FF27A5 /* leqo */,
+				3929FA832A2777F200FF27A5 /* HelloCustomKeyboard */,
 				3929FA602A273CCF00FF27A5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				3929FA5F2A273CCF00FF27A5 /* leqo.app */,
+				3929FA822A2777F200FF27A5 /* HelloCustomKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,7 +108,7 @@
 			children = (
 				3929FA622A273CCF00FF27A5 /* leqoApp.swift */,
 				3929FA702A27669F00FF27A5 /* GoogleService-Info.plist */,
-				3929FA642A273CCF00FF27A5 /* ContentView.swift */,
+				3929FA7D2A27685300FF27A5 /* Views */,
 				3929FA662A273CD000FF27A5 /* Assets.xcassets */,
 				3929FA682A273CD000FF27A5 /* Preview Content */,
 			);
@@ -70,6 +123,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		3929FA7D2A27685300FF27A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3929FA7B2A27684400FF27A5 /* MainView.swift */,
+				395979812A2AC9D90008A987 /* SecondView.swift */,
+				395979832A2ACB5C0008A987 /* ThirdView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3929FA832A2777F200FF27A5 /* HelloCustomKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3929FA842A2777F200FF27A5 /* KeyboardViewController.swift */,
+				3929FA8E2A27791100FF27A5 /* KeyboardView.swift */,
+				3929FA862A2777F200FF27A5 /* Info.plist */,
+			);
+			path = HelloCustomKeyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,15 +153,40 @@
 				3929FA5B2A273CCF00FF27A5 /* Sources */,
 				3929FA5C2A273CCF00FF27A5 /* Frameworks */,
 				3929FA5D2A273CCF00FF27A5 /* Resources */,
+				3929FA8D2A2777F200FF27A5 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3929FA882A2777F200FF27A5 /* PBXTargetDependency */,
+			);
+			name = leqo;
+			packageProductDependencies = (
+				3929FA732A27671D00FF27A5 /* FirebaseAuth */,
+				3929FA752A27671D00FF27A5 /* FirebaseFirestore */,
+				3929FA772A27671D00FF27A5 /* FirebaseFirestoreSwift */,
+				3929FA792A27671D00FF27A5 /* FirebaseStorage */,
+			);
+			productName = leqo;
+			productReference = 3929FA5F2A273CCF00FF27A5 /* leqo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3929FA812A2777F200FF27A5 /* HelloCustomKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3929FA8A2A2777F200FF27A5 /* Build configuration list for PBXNativeTarget "HelloCustomKeyboard" */;
+			buildPhases = (
+				3929FA7E2A2777F200FF27A5 /* Sources */,
+				3929FA7F2A2777F200FF27A5 /* Frameworks */,
+				3929FA802A2777F200FF27A5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = leqo;
-			productName = leqo;
-			productReference = 3929FA5F2A273CCF00FF27A5 /* leqo.app */;
-			productType = "com.apple.product-type.application";
+			name = HelloCustomKeyboard;
+			productName = HelloCustomKeyboard;
+			productReference = 3929FA822A2777F200FF27A5 /* HelloCustomKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -103,6 +201,9 @@
 					3929FA5E2A273CCF00FF27A5 = {
 						CreatedOnToolsVersion = 14.3;
 					};
+					3929FA812A2777F200FF27A5 = {
+						CreatedOnToolsVersion = 14.3;
+					};
 				};
 			};
 			buildConfigurationList = 3929FA5A2A273CCF00FF27A5 /* Build configuration list for PBXProject "leqo" */;
@@ -114,11 +215,15 @@
 				Base,
 			);
 			mainGroup = 3929FA562A273CCF00FF27A5;
+			packageReferences = (
+				3929FA722A27671D00FF27A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 3929FA602A273CCF00FF27A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				3929FA5E2A273CCF00FF27A5 /* leqo */,
+				3929FA812A2777F200FF27A5 /* HelloCustomKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -134,6 +239,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3929FA802A2777F200FF27A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,12 +253,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3929FA652A273CCF00FF27A5 /* ContentView.swift in Sources */,
+				3929FA902A27792A00FF27A5 /* KeyboardView.swift in Sources */,
+				395979842A2ACB5C0008A987 /* ThirdView.swift in Sources */,
+				3929FA7C2A27684400FF27A5 /* MainView.swift in Sources */,
+				395979822A2AC9D90008A987 /* SecondView.swift in Sources */,
 				3929FA632A273CCF00FF27A5 /* leqoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3929FA7E2A2777F200FF27A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3929FA852A2777F200FF27A5 /* KeyboardViewController.swift in Sources */,
+				3929FA8F2A27791100FF27A5 /* KeyboardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3929FA882A2777F200FF27A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3929FA812A2777F200FF27A5 /* HelloCustomKeyboard */;
+			targetProxy = 3929FA872A2777F200FF27A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3929FA6B2A273CD000FF27A5 /* Debug */ = {
@@ -267,6 +399,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +435,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -333,6 +467,56 @@
 			};
 			name = Release;
 		};
+		3929FA8B2A2777F200FF27A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8H4588Q956;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HelloCustomKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HelloCustomKeyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coolooky.leqo.HelloCustomKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3929FA8C2A2777F200FF27A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8H4588Q956;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HelloCustomKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HelloCustomKeyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coolooky.leqo.HelloCustomKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -354,7 +538,50 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		3929FA8A2A2777F200FF27A5 /* Build configuration list for PBXNativeTarget "HelloCustomKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3929FA8B2A2777F200FF27A5 /* Debug */,
+				3929FA8C2A2777F200FF27A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3929FA722A27671D00FF27A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3929FA732A27671D00FF27A5 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3929FA722A27671D00FF27A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		3929FA752A27671D00FF27A5 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3929FA722A27671D00FF27A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		3929FA772A27671D00FF27A5 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3929FA722A27671D00FF27A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		3929FA792A27671D00FF27A5 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3929FA722A27671D00FF27A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3929FA572A273CCF00FF27A5 /* Project object */;
 }
